@@ -89,7 +89,7 @@ _END;
 	else{
 		$conn = mysqli_connect($hostname, $username, $password, $database);
 		if(!$conn)
-			die("Error while connectine. Try later. <br>".mysqli_connect_error());
+			die("Error while connecting. Try later. <br>".mysqli_connect_error());
 
 		$currentUserName = trim($_POST['username']);
 		$currentUserPass = trim($_POST['pass']);
