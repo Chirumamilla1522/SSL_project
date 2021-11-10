@@ -34,7 +34,7 @@
     if(!$conn)
         die("Error connecting database.<br>".mysqli_connect_error());
     else 
-        echo "Connected to databse, creating tables.<br>";
+        echo "Connected to database, creating tables.<br>";
     
     // create auth table which stores username and password for each user, along with info it he/she is admin
     $table_query = "CREATE TABLE auth (username VARCHAR(20) NOT NULL PRIMARY KEY, pass VARCHAR(20) NOT NULL, isAdmin VARCHAR(3) NOT NULL DEFAULT 'No', isHr VARCHAR(3) NOT NULL DEFAULT 'No')";
